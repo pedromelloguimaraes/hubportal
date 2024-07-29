@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiozSlISkKcIo66AziZfokjGcRzX1TJ0FCTb4gA1jpdTK4o2yZr8KnBfI6c5XupD0v1I8&usqp=CAU">
+        <title>Portal do Aluno</title>
+        <style>
+            @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:white;
+                align-content: center;
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,127,193,1) 0%, rgba(255,255,255,1) 100%);
+            }
+            button{
+                border-color: transparent;
+                border-radius: 10px;
+                background-color:blue;
+                width: 50%;
+                height: 100px;
+                font-size: xx-large;
+                font-weight: bold;
+                margin: 20px;
+                color: white;
+                margin-left: 25%;
+                
+            }
+            button:hover{
+                animation: myAnim 2s ease 0s 1 normal forwards;
+            }
+
+            .top{
+                margin-top: 10%
+            }
+            img{
+                padding-top: 5%;
+                width: 200px;
+                margin-left: 42.5%;
+            }
+
+            
+        </style>
+        <script>
+            function phidelis(){
+                window.location.href = "https://aluno.davincivix.com.br"
+            }
+            function isams(){
+                window.location.href = "https://davincivix.students.isamshosting.cloud/api/homepage/"
+            }
+        </script>
+    </head>
+    <body>
+        <img src="https://www.logotypes101.com/logos/163/AB76317BAF0F62ADD26DC68E7A5F0238/logo_leonardo_da_vinci.png">
+        <br>
+        <button class="top" onclick="phidelis()">Portal do Aluno</button>
+        <button onclick="isams()">Portal Novo</button>
+    </body>
+</html>
